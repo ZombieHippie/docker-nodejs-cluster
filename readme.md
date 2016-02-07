@@ -6,3 +6,4 @@
 
  * `SESSION_SECRET`
  * `DB_HOST`
+ * `DB_REPLICA_SET`
