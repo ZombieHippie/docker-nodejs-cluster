@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  if error != null
+    .error-message
+      span= error
+  h1= title
+  em This page is being served to you from <b>#{hostname}</b>!
+
+  //- form(method="POST" action="/save")
+    textfield(name="do" value=session.text placeholder="put text here and save to your session!")
+    br
+    input(type="submit")
+
+  pre= JSON.stringify(session, null, 2)
